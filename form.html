@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+<!-- ------------font-link------------ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- ----------------bootstrap-link----------------- -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- -----------stylesheet-link-------------- -->
+  <link rel="stylesheet" href="/JS-Files/Form-validation/form.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header row">
+      <div class="headline col">
+        <h1 class="col">sign up form</h1>
+        <h5 class="col"></h5>
+      </div>
+    </div>
+    <div class="mb-5">
+      <div class="hero-section row">
+        <div class="col-6">
+
+          <div class="name position-relative">
+            <label for="" class="pb-1">FullName</label>
+            <input type="text" id="name"class="col-12 py-2 mb-4"minlength="3" >
+            <p id="name-error" class="name-error position-absolute" style="color: rgb(255, 0, 0);" ></p>
+          </div>
+
+          <div class="number position-relative">
+            <label for="" class="pb-1">Phone Number</label>
+            <input type="text" id="number" class="col-12 py-2 mb-4" maxlength="10">
+            <p id="number-error" class="number-error position-absolute" style="color: rgb(252, 0, 0);"></p>
+          </div>
+          <div class="gender position-relative">
+            <label for="" class="col-12 pb-2">Gender</label>
+              <div class="input-gender">
+                <input type="radio" id="male" name="gender" class="col-1">
+                <label for="male" class="pb-3" >Male</label>
+                <input type="radio" id="female" name="gender"class="col-1">
+                <label for="female" class="pb-3">Female</label>
+              </div>
+            <p id="gender-error" class="gender-error position-absolute" style="color: rgb(252, 0, 0);"></p>
+          </div>
+          <div class="pin position-relative">
+            <label for="" class="col-12 pb-1">Pincode</label>
+            <input type="text" id="pin" maxlength="6" class="col-12 py-2 mb-4">
+            <p id="pin-error" class="pin-error position-absolute" style="color: rgb(252, 0, 0);"></p>
+          </div>
+
+          <div class="address position-relative">
+            <label for="" class="pb-1">Address</label>
+            <input type="text" id="address" class="col-12 py-2 mb-4" maxlength="300">
+            <p id="address-error" class="address-error position-absolute" style="color: rgb(252, 0, 0);"></p>
+        </div>
+
+          <div class="age position-relative" >
+            <label for="age" class="pb-1 col-12">Age</label>
+              <select name="age" id="age" class="col-12 p-2">
+                <option value="select">Select Your Age</option>
+                <option value="under 18" class="">Under 18</option>
+                <option value="above 18">Above 18</option>
+              </select>
+              <p id="age-error" class="age-error position-absolute" style="color: rgb(252, 0, 0);"></p>
+          </div>
+        </div>
+
+        <div class="col-6 ">
+          <div class="mail position-relative">
+            <label for="" class="pb-1">Email Address</label>
+            <input type="email" id="mail" class="col-12 py-2 mb-4">
+            <p id="mail-error" class="mail-error position-absolute" style="color: rgb(252, 0, 0);"></p>
+          </div>
+
+          <div class="date position-relative">
+            <label for="" class="pb-1">Date Of Birth</label>
+            <input type="date" id="date" class="col-12 py-2 mb-3"min=" 2020-12-31" max="2000-01-31">
+            <p id="date-error" class="date-error position-absolute" style="color: rgb(252, 0, 0);"></p>
+          </div>
+
+          <div class="city position-relative">
+            <label for="" class="pb-1">City</label>
+            <input type="text" id="city" class="col-12 py-2 mb-3"minlength="3">
+            <p id="city-error" class="city-error position-absolute" style="color: rgb(252, 0, 0);"></p>
+          </div>
+
+          <div class="state position-relative">
+            <label for="" class="pb-1">State</label>
+            <input type="text" id="state" class="col-12 py-2 mb-3"minlength="3">
+            <p id="state-error" class="state-error position-absolute" style="color: rgb(252, 0, 0);"></p>
+          </div>
+
+          <div class="country position-relative">
+            <label for="" class="pb-1">Country</label>
+            <input type="text" id="country" class="col-12 py-2 mb-4 "minlength="3">
+            <p id="country-error" class="country-error position-absolute" style="color: rgb(252, 0, 0);"></p>
+          </div>
+
+          <div class="file position-relative">
+            <label for="" class="mb-1 ">Please Select The File Here</label>
+            <input type="file" id="file" class="p-1 file col-12" accept="image/*">
+            <p id="file-error" class="file-error position-absolute" style="color: rgb(252, 0, 0);"></p>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="form-button col-12 mt-5 " onclick="validateform()">Submit..!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./form.js"></script>
+</body>
+</html>

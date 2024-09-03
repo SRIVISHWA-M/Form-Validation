@@ -1,0 +1,104 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.container{
+  background-color: #f8ac087b;
+  margin: 50px;
+  background-image: url(./img/leaf-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; 
+}
+.header{
+  padding: 45px 60px;
+  background-image: url(./img/green-circle-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+}
+.headline h1,.headline h5{
+  font-family: "Trocchi", serif;
+  color: #0b3c1b;
+  font-size: 42px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.headline h5 ,.hero-section{
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  color: #343434;
+  font-weight: 400;
+}
+.hero-section{
+  background-color: #08491e4e;
+  margin: 0 70px 0 70px;
+  font-size: 18px;
+  color: #08491e;
+  padding: 25px 70px;
+}
+.item input{
+  padding: 12px;
+}
+*{
+  border-radius: 10px;
+}
+
+.form-button{
+  background-color:#0a5423;
+  color:rgb(255, 255, 255);
+  padding: 9px 20px;
+  border-radius: 9px;
+  font-family: "Trocchi", serif;
+  border-color: rgb(0, 255, 42);
+}
+input {
+  background-color: #0a5411aa;
+  border-color: rgb(0, 255, 42);
+  color: aliceblue;
+}
+select{
+  background-color: #0a5411aa;
+  border-color: rgb(0, 255, 42);
+  color: aliceblue;
+  font-family:"Trocchi", serif ;
+}
+input[type=file]::file-selector-button{
+  background-color: #34d526;
+  border-radius: 10px;
+  border-color: #34d526;
+  color: #fefefe;
+}
+.file{
+  border-color: #34d526;
+}
+p{
+  top: 80px;
+  font-family: "Roboto", serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+#gender-error { 
+  top: 65px;
+}
+#male ,#female{
+  accent-color: #34d526;
+  border: greenyellow solid 1px;
+}
+input{
+  padding-left: 10px;
+}
+#date{
+  padding-right: 10px;
+}
+.city ,.name ,.number ,.mail ,.gender ,.age ,.pin ,.address ,.date ,.city ,.state ,.country {
+  margin-top: 12px;
+}
+.gender{
+  margin-top: 19px;
+}
+.address{
+  margin-top: 4px;
+}
+.file{
+  margin-top: 7px ;
+}
